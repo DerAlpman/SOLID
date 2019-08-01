@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\DependencyInversion\ILogger.cs" />
     <Compile Include="Interfaces\InterfaceSegregation\IEmailMessage.cs" />
     <Compile Include="Interfaces\InterfaceSegregation\IMessage.cs" />
     <Compile Include="Interfaces\InterfaceSegregation\IMessageNotIS.cs" />

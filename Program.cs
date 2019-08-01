@@ -1,5 +1,7 @@
 ﻿using System;
 using Components.SOLID.Interfaces.SingleResponsibility;
+using SOLID.DependencyInversion.Loggers;
+using SOLID.DependencyInversion.Processors;
 using SOLID.LiskovSubstitution;
 using SOLID.SingleResponsibility;
 using SOLID.SingleResponsibility.ContactParsers;
@@ -18,6 +20,15 @@ namespace SOLID
             }
             SingleResponsibility();
             LiskovSubstitution();
+            DependencyInversion();
+        }
+
+        private static void DependencyInversion()
+        {
+            var processorNotDI = new ProcessorNotDI();
+
+            var textLogger = new TextLogger();
+            var processore = new Processor(textLogger);
         }
 
         private static void SingleResponsibility()

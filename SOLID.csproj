@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DependencyInversion\Loggers\TextLogger.cs" />
+    <Compile Include="DependencyInversion\Processors\Processor.cs" />
+    <Compile Include="DependencyInversion\Processors\ProcessorNotDI.cs" />
+    <Compile Include="DependencyInversion\Loggers\TextLoggerNotDI.cs" />
     <Compile Include="InterfaceSegregation\EmailMessage.cs" />
     <Compile Include="InterfaceSegregation\EmailMessageNotIS.cs" />
     <Compile Include="InterfaceSegregation\SmsMessage.cs" />
