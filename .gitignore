@@ -2,4 +2,10 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/SOLID/v16
+/.vs
+/bin/Debug
+/Components.SOLID/bin/Debug
+/Components.SOLID/obj/Debug
+/Components.SOLID/Properties
+/obj/Debug
+/Properties
